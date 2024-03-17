@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- <div style="width: 1000px; border: 2px solid black;">
+    <div style="border: 1px solid; padding: 30px; background-color: lightgreen; width: 100px;" id="box">
+        Click Me
+    </div>
+</div> -->
+
+
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 70vh;">
+        <div class="row">
+            <div class="d-flex justify-content-center mb-4">
+                <h1> ROCK - PAPER - SCISSORS</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="game('rock')" class="fs-1 ms-3 me-3 button"><i
+                        class="fa-solid fs-1 fa-hand-back-fist"></i></button>
+                <button onclick="game('paper')" class="fs-1 ms-3 me-3 button"><i
+                        class="fa-solid fs-1 fa-hand"></i></button>
+                <button onclick="game('scissor')" class="fs-1 ms-3 me-3 button"><i
+                        class="fa-solid fs-1 fa-hand-scissors fa-rotate-90"></i></button>
+            </div>
+            <div id="game" class="d-flex justify-content-center mt-5 d-none">
+                <div class="ms-3 me-3">
+                    <div class="text-center fs-5 fw-normal text-success">You</div>
+                    <button class="fs-1 button">
+                        <i id="youDisplay"
+                        class="fa-solid fs-1"></i>
+                    </button>
+                </div>
+                <div class="ms-3 me-3">
+                    <div class="text-center fs-5 fw-normal text-danger">Computer</div>
+                    <button   class="fs-1 button"><i id="comDisplay"
+                        class="fa-solid fs-1 "></i></button>
+                </div>
+             </div>
+             <div class="d-flex justify-content-center mt-5">
+                    <div id="result" class="fs-3 fw-semibold">
+                        
+                    </div>
+            </div>
+            <div id="score" class="d-none d-flex justify-content-center mt-5">
+                <div id="yourScore" class="me-3 ms-3">
+                   Your Score : 0
+                </div>
+                <div id="computerScore" class="me-3 ms-3">
+                    Computer Score : 0
+                </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
